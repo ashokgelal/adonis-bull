@@ -21,6 +21,11 @@ NPM
 npm install @rocketseat/adonis-bull
 ```
 
+
+## Setup
+
+`node ace invoke @ashokgelal/adonis-bull`
+
 ## Use
 
 Add the config file at `config/bull.ts`:
@@ -31,15 +36,16 @@ import { BullConfig } from '@ioc:Rocketseat/Bull'
 
 
 const bullConfig: BullConfig = {
-  connection: Env.get('BULL_CONNECTION'),
-
-  bull: {
-    host: Env.get('BULL_REDIS_HOST'),
-    port: Env.get('BULL_REDIS_PORT'),
-    password: Env.get('BULL_REDIS_PASSWORD', ''),
-    db: 0,
-    keyPrefix: '',
-  },
+  connection: Env.get('BULL_CONNECTION', 'bull'),
+  connections: {
+    bull: {
+  	  host: Env.get('BULL_REDIS_HOST'),
+  	  port: Env.get('BULL_REDIS_PORT'),
+  	  password: Env.get('BULL_REDIS_PASSWORD', ''),
+  	  db: 0,
+  	  keyPrefix: '',
+    },
+  }
 }
 
 export default bullConfig

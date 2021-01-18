@@ -1,6 +1,6 @@
 {
   "name": "@ashokgelal/adonis-bull",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "main": "build/providers/BullProvider.js",
   "license": "MIT",
   "scripts": {
@@ -81,12 +81,12 @@
   ],
   "types": "build/adonis-typings/index.d.ts",
   "adonisjs": {
-    "types": "@rocketseat/adonis-bull",
+    "types": "@ashokgelal/adonis-bull",
     "providers": [
-      "@rocketseat/adonis-bull"
+      "@ashokgelal/adonis-bull"
     ],
     "commands": [
-      "@rocketseat/adonis-bull/build/commands"
+      "@ashokgelal/adonis-bull/build/commands"
     ]
   }
 }

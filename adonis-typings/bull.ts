@@ -24,7 +24,7 @@ declare module '@ioc:Rocketseat/Bull' {
    * everywhere.
    */
   export interface BullConfig {
-    connection: keyof BullConnectionsList;
+    connection: string;
     connections: { [P in keyof BullConnectionsList]: BullConnectionsList[P] };
   }
 
