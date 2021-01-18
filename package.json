@@ -1,6 +1,6 @@
 {
   "name": "@ashokgelal/adonis-bull",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "main": "build/providers/BullProvider.js",
   "license": "MIT",
   "scripts": {
