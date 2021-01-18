@@ -1,5 +1,5 @@
 {
-  "name": "@rocketseat/adonis-bull",
+  "name": "@ashokgelal/adonis-bull",
   "version": "0.2.2",
   "main": "build/providers/BullProvider.js",
   "license": "MIT",
