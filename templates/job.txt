@@ -17,6 +17,6 @@ export default class {{ filename }} implements JobContract {
 
   public async handle(job) {
     const { data } = job
-    // Do somethign with you job data
+    // Do something with you job data
   }
 }
